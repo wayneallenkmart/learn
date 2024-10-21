@@ -55,7 +55,7 @@ jobs:
     runs-on: ubutntu-latest
     steps:
       - name: Get build artifacts
-        uses: actions/download/artifact
+        uses: actions/download-artifact
         with:
           name: dist-files
       - name: Output contents

@@ -1,6 +1,11 @@
 name: Second Workflow
 on: [push, workflow_dispatch]
 jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub context
+        run: echo "${{ toJSON(github) }}"
   test:
     runs-on: ubuntu-latest
     steps:

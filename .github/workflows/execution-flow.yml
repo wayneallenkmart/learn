@@ -44,8 +44,11 @@ jobs:
           name: test-report
           path: test.json
   build:
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest, windows-latest]
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.operating-system }}
     steps:
       - name: Get code
         uses: actions/checkout@v3

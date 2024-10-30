@@ -23,7 +23,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container: 
-      image: node:20
+      image: node
     steps:
       - name: Get code
         uses: actions/checkout@v3

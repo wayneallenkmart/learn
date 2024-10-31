@@ -1,0 +1,5 @@
+name: Sample Javascript action
+description: A sample Javascript action to demonstrate how it works
+runs:
+  using: 'node'
+  main: 'main.js'

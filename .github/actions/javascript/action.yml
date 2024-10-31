@@ -2,4 +2,4 @@ name: Sample Javascript action
 description: A sample Javascript action to demonstrate how it works
 runs:
   using: 'node16'
-  main: 'main.cjs'
+  main: 'main.js'

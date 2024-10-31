@@ -70,4 +70,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run custom Javascript action
-        uses: ./.github/actions/workflows
+        uses: ./.github/actions/javascript
